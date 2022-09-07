@@ -16,6 +16,9 @@ bool zPartOfSet(double complex c, int iterations){
         }
         previous[i] = z;
     }
+    if(cabs(z)<1000){
+        partOfSet = 1;
+    }
     return partOfSet;
 }
 
